@@ -20,6 +20,7 @@ public class Places {
     public static ArrayList<Places> getPlacesArray() {
         return placesArray;
     }
+
     @Override
     public String toString() {
        return "Место " + id + ": "
