@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/DB Structure.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/products/ProductLink.java" afterDir="false" />
+    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="class ProductLink added">
+      <change afterPath="$PROJECT_DIR$/src/links/Link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/links/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/links/Some.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/links/Unit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Places.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Places.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Products.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +59,20 @@
       <option name="project" value="LOCAL" />
       <updated>1741536453018</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="class ProductLink added">
+      <option name="closed" value="true" />
+      <created>1741710946013</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741710946013</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="class ProductLink added" />
+    <option name="LAST_COMMIT_MESSAGE" value="class ProductLink added" />
   </component>
 </project>
