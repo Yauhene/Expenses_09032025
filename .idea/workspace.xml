@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="class ProductLink added">
-      <change afterPath="$PROJECT_DIR$/src/links/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/links/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/links/Some.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/links/Unit.java" afterDir="false" />
+    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="class Link added">
+      <change afterPath="$PROJECT_DIR$/src/Vizits/Vizits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/purchases/Purchases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/places/Places.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Places.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Products.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +40,19 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Java II/1_Незавершенка/Final_Control_Task 09-12-2023&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Start" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Start" />
+      <module name="Expenses_09032025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,12 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741710946013</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="class Link added">
+      <option name="closed" value="true" />
+      <created>1742056308157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742056308157</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="class ProductLink added" />
-    <option name="LAST_COMMIT_MESSAGE" value="class ProductLink added" />
+    <MESSAGE value="class Link added" />
+    <option name="LAST_COMMIT_MESSAGE" value="class Link added" />
   </component>
 </project>
