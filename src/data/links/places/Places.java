@@ -1,4 +1,4 @@
-package places;
+package data.links.places;
 
 import java.util.*;
 

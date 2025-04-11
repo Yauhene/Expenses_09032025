@@ -1,4 +1,4 @@
-package links;
+package data.links;
 
 public class Some {
     public static long id = 0;

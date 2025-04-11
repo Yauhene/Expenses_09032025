@@ -1,4 +1,4 @@
-package products;
+package data.links.products;
 
 public class ProductLink {
     private static long elCount = 0;

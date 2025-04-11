@@ -1,4 +1,4 @@
-package links;
+package data.links;
 
 public class Unit {
     public static long classID = 0;

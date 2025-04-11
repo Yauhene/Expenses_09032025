@@ -1,4 +1,4 @@
-package links;
+package data.links;
 
 public class Link<T> {
     private Link prev;

@@ -1,6 +1,4 @@
-package products;
-
-import places.*;
+package data.links.products;
 
 import java.util.*;
 

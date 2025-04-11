@@ -1,11 +1,12 @@
-import Vizits.*;
-import places.*;
-import products.*;
-import purchases.*;
+import data.links.vizits.*;
+import data.links.places.*;
+import data.links.products.*;
+import data.links.purchases.*;
+import fileWorks.*;
+
+import java.io.*;
 //import vizits.*;
 
-
-import java.util.*;
 
 public class Start {
     public static Places place;
@@ -13,8 +14,9 @@ public class Start {
     public static Vizits vizit;
     public static Purchases purchase;
 
-    public static void main(String[] args) {
-        System.out.println("Hi !!!");
+    public static void main(String[] args) throws IOException {
+        Fileworks.readVizitsFromFile("./src/data/links/files/vizits.txt");
+
         place = new Places("Корона", "Маяковского-Денисовская");
         place = new Places("Гиппо", "Рокоссовского");
         place = new Places("MOMO", "Партизанский пр-т");
@@ -34,7 +36,8 @@ public class Start {
         product = new Products(1,  "Колбаса Еврейская", "г");
         product = new Products(1,  "Колбаса С сальцем", "кг");
 
-        vizit = new Vizits(4, 4, 2025, 1);
+        vizit = new Vizits(8, 4, 2025, 1);
+//        System.out.println(vizit.id + " " + vizit.date);
 
         purchase = new Purchases(1,1,2,0.49, "руб.");
         purchase = new Purchases(1,2,1,1.90, "руб.");
@@ -58,14 +61,19 @@ public class Start {
         }
         System.out.println("--------------------------------------");
 
-        for (Vizits vz : Vizits.getVizitsArray()) {
-            System.out.println(vz);
-        }
+
 
         System.out.println("********************************************");
         for (Purchases purch: Purchases.getPurchasesArray()) {
             System.out.println(purch.toString());
         }
+
+
+
+        for (Vizits vz : Vizits.getVizitsArray()) {
+            System.out.println(vz);
+        }
+        Fileworks.Write_Vizits_to_File("./src/data/links/files/vizits.txt");
 
 
 //        System.out.println("Игры с датой -------------------------------");

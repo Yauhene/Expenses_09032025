@@ -1,7 +1,7 @@
-package purchases;
+package data.links.purchases;
 
-import Vizits.*;
-import products.*;
+import data.links.vizits.*;
+import data.links.products.*;
 
 import java.util.*;
 
