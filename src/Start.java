@@ -36,7 +36,7 @@ public class Start {
         product = new Products(1,  "Колбаса Еврейская", "г");
         product = new Products(1,  "Колбаса С сальцем", "кг");
 
-        vizit = new Vizits(8, 4, 2025, 1);
+//        vizit = new Vizits(7, 4, 2025, 1);
 //        System.out.println(vizit.id + " " + vizit.date);
 
         purchase = new Purchases(1,1,2,0.49, "руб.");

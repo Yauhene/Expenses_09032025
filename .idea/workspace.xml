@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="classes Purchases, Vizits added">
-      <change afterPath="$PROJECT_DIR$/src/data/links/files/vizits.b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileWorks/Fileworks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vizits/Vizits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/vizits/Vizits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/links/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/links/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/links/Some.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/Some.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/links/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Places.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/places/Places.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/ProductLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/products/ProductLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/products/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/purchases/Purchases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" afterDir="false" />
-    </list>
+    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="problem with vizits recording" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743957676795</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="problem with vizits recording">
+      <option name="closed" value="true" />
+      <created>1744371379554</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744371379554</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -109,6 +103,7 @@
     <MESSAGE value="class ProductLink added" />
     <MESSAGE value="class Link added" />
     <MESSAGE value="classes Purchases, Vizits added" />
-    <option name="LAST_COMMIT_MESSAGE" value="classes Purchases, Vizits added" />
+    <MESSAGE value="problem with vizits recording" />
+    <option name="LAST_COMMIT_MESSAGE" value="problem with vizits recording" />
   </component>
 </project>
