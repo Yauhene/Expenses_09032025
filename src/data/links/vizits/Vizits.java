@@ -5,7 +5,7 @@ import data.links.places.*;
 import java.util.*;
 
 public class Vizits {
-    private static long currentID = 0;
+    private static long currentID = 0; // максимальное значение id в классе на данный момент
     public long id;
     public Date date;
     public long placeID;

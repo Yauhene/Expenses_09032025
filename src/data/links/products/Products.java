@@ -3,7 +3,7 @@ package data.links.products;
 import java.util.*;
 
 public class Products {
-    private static long currentID = 1;
+    private static long currentID = 0;
     public long id; // id продукта
     public long typeID; // тип продукта
     public String name; // название продукта
@@ -14,7 +14,24 @@ public class Products {
     public static HashMap<Long, Products> productsMap = new HashMap<>();
 
     public Products(long typeID, String name, String units) {
-        this.id=currentID++;
+        this.id = ++currentID;
+        this.typeID = typeID;
+        this.name = name;
+        this.units = units;
+        productsArray.add(this);
+        productsMap.put(this.id, this);
+    }
+
+    public static long getCurrentID() {
+        return currentID;
+    }
+
+    public static void setCurrentID(long currentID) {
+        Products.currentID = currentID;
+    }
+
+    public Products(long id, long typeID, String name, String units) {
+        this.id = id;
         this.typeID = typeID;
         this.name = name;
         this.units = units;

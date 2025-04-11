@@ -6,7 +6,7 @@ import data.links.products.*;
 import java.util.*;
 
 public class Purchases {
-    private static long currentID = 1;
+    private static long currentID = 0;
     public long id; // id продукта
     public long vizitID; // id визита ссылка
     public long productID; // id продукта ссылка
@@ -20,7 +20,19 @@ public class Purchases {
     public static HashMap<Long, Purchases> purchasesMap = new HashMap<>();
 
     public Purchases(long vizitID, long productID, double quantity, double price, String currency) {
-        this.id=currentID++;
+        this.id = ++currentID;
+        this.vizitID = vizitID;
+        this.productID = productID;
+        this.quantity = quantity;
+        this.price = price;
+        this.currency = currency;
+        this.summa = quantity * price;
+        purchasesArray.add(this);
+        purchasesMap.put(this.id, this);
+    }
+
+    public Purchases(long id, long vizitID, long productID, double quantity, double price, String currency) {
+        this.id = id;
         this.vizitID = vizitID;
         this.productID = productID;
         this.quantity = quantity;
@@ -36,6 +48,14 @@ public class Purchases {
     }
     public static Purchases getPurchase(long id) {
         return purchasesMap.get(id);
+    }
+
+    public static long getCurrentID() {
+        return  currentID;
+    }
+
+    public static void setCurrentID(long currentID) {
+        Purchases.currentID = currentID;
     }
 
     @Override
