@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="problem with vizits recording resolved">
-      <change afterPath="$PROJECT_DIR$/src/data/links/files/purchases.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB Structure.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/DB Structure.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/places/Places.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/places/Places.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/products/ProductLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/products/ProductLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/products/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/vizits/Vizits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/vizits/Vizits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileWorks/Fileworks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileWorks/Fileworks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744371727073</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="problem with vizits recording resolved">
+      <option name="closed" value="true" />
+      <created>1744379948169</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744379948169</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

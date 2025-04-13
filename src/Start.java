@@ -1,3 +1,4 @@
+import Menu.*;
 import data.links.vizits.*;
 import data.links.places.*;
 import data.links.products.*;
@@ -78,10 +79,16 @@ public class Start {
         for (Vizits vz : Vizits.getVizitsArray()) {
             System.out.println(vz);
         }
+
+        MainMenu mainMenu = new MainMenu();
+        System.out.println("Window started");
+
         Fileworks.writeVizitsToFile("./src/data/links/files/vizits.txt");
         Fileworks.writePurchasesToFile("./src/data/links/files/purchases.txt");
         Fileworks.writeProductsToFile("./src/data/links/files/products.txt");
         Fileworks.writePlacesToFile("./src/data/links/files/places.txt");
+
+        System.out.println("Files saved");
 
 
 //        System.out.println("Игры с датой -------------------------------");
