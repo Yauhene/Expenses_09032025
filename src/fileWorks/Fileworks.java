@@ -188,7 +188,7 @@ public class Fileworks {
      * @throws Exception
      */
     public static void writePlacesToFile(String fileName){
-        ArrayList<Places> array = Places.getPlacesArray();
+        ArrayList<Places> array = Places.getPlacesArrayList();
         String tempStr = "";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             for (Places place : array) {

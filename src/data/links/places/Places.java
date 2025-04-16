@@ -1,5 +1,6 @@
 package data.links.places;
 
+import java.sql.*;
 import java.util.*;
 
 public class Places {
@@ -35,12 +36,22 @@ public class Places {
         placesMap.put(this.id, this);
     }
 
-    public static ArrayList<Places> getPlacesArray() {
+    public static ArrayList<Places> getPlacesArrayList() {
         return placesArray;
     }
 
+
+
     public static Places getPlace(long id) {
         return placesMap.get(id);
+    }
+
+    public static String[] getLocationsStringArray() {
+        String[] arr = new String[placesArray.size()];
+        for (int i = 0; i < placesArray.size(); i++) {
+            arr[i] =placesArray.get(i).location;
+        }
+        return arr;
     }
 
     @Override

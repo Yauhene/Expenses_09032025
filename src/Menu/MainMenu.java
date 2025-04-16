@@ -10,7 +10,7 @@ import java.sql.*;
 import java.util.*;
 
 public class MainMenu extends JFrame {
-    private static final int WINDOW_HEIGHT = 500;
+    private static final int WINDOW_HEIGHT = 800;
     private static final int WINDOW_WIDTH = 1500;
     private static final int WINDOW_POSX = 0;
     private static final int WINDOW_POSY = 50;
@@ -21,8 +21,8 @@ public class MainMenu extends JFrame {
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         setTitle("Визиты");
         setResizable(false);
-        setLayout(new GridLayout(3,1));
-//        GridLayout menuGrid = new GridLayout(1,2);
+        setLayout(new BorderLayout());
+        GridLayout menuGrid = new GridLayout(1,3);
 
         // Создаем панель для размещения двух верхних элементов
 
@@ -52,22 +52,17 @@ public class MainMenu extends JFrame {
         emptyPanel.setLocation(0,0);
 
         panel_1.add(vListPanel);
-        panel_1.add(emptyPanel);
+//        panel_1.add(emptyPanel);
         panel_1.setBorder(BorderFactory.createLineBorder(Color.black, 3));
 
         // Создаем среднюю панель кнопок
-        JPanel panel_2 = new JPanel(new GridLayout(1, 5));
+        JPanel panel_2 = new JPanel(new GridLayout(5, 1));
         // Создаем кнопки для средней панели кнопок
         JButton but_1 = new JButton("Кнопка 1");
-        but_1.setSize(300, 50);
         JButton but_2 = new JButton("Кнопка 2");
-        but_2.setSize(300, 50);
         JButton but_3 = new JButton("Кнопка 3");
-        but_3.setSize(300, 50);
         JButton but_4 = new JButton("Кнопка 4");
-        but_4.setSize(300, 50);
         JButton but_5 = new JButton("Кнопка 5");
-        but_5.setSize(300, 50);
         // Добавляем кнопки средней панели кнопок на среднюю панель кнопок
         panel_2.add(but_1);
         panel_2.add(but_2);
@@ -77,6 +72,7 @@ public class MainMenu extends JFrame {
 
         // Создаем нижнюю панель кнопок
         JPanel bottomPanel = new JPanel();
+
         JButton btnStart = new JButton("Start");
         btnStart.addActionListener(new ActionListener() {
             @Override
@@ -93,13 +89,15 @@ public class MainMenu extends JFrame {
             }
         });
         panel_1.add(vListPanel);
-        panel_1.add(emptyPanel);
-        add(panel_1);
-        add(panel_2);
+//        panel_1.add(emptyPanel);
+        panel_1.add(BorderLayout.EAST,panel_2);
+        add(BorderLayout.NORTH,panel_1);
+//        add(BorderLayout.EAST,panel_2);
 
         bottomPanel.add(btnStart);
         bottomPanel.add(btnExit);
-        add(bottomPanel);
+//        add(panel_2);
+        add(BorderLayout.SOUTH,bottomPanel);
     setVisible(true);
 }
 }

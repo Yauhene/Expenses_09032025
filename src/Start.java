@@ -1,4 +1,5 @@
 import Menu.*;
+import Proubs.*;
 import data.links.vizits.*;
 import data.links.places.*;
 import data.links.products.*;
@@ -58,7 +59,7 @@ public class Start {
 
 //        Fileworks.writePurchasesToFile("./src/data/links/files/purchases.txt");
 
-        for (Places pl : Places.getPlacesArray()) {
+        for (Places pl : Places.getPlacesArrayList()) {
             System.out.println(pl);
         }
         System.out.println("--------------------------------------");
@@ -80,7 +81,8 @@ public class Start {
             System.out.println(vz);
         }
 
-        MainMenu mainMenu = new MainMenu();
+//        MainMenu mainMenu = new MainMenu();
+        new ListModelTest();
         System.out.println("Window started");
 
         Fileworks.writeVizitsToFile("./src/data/links/files/vizits.txt");
