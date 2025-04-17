@@ -59,14 +59,14 @@ public class Start {
 
 //        Fileworks.writePurchasesToFile("./src/data/links/files/purchases.txt");
 
-        for (Places pl : Places.getPlacesArrayList()) {
-            System.out.println(pl);
-        }
-        System.out.println("--------------------------------------");
-        for (Products pr : Products.getProductsArray()) {
-            System.out.println(pr);
-        }
-        System.out.println("--------------------------------------");
+//        for (Places pl : Places.getPlacesArrayList()) {
+//            System.out.println(pl);
+//        }
+//        System.out.println("--------------------------------------");
+//        for (Products pr : Products.getProductsArray()) {
+//            System.out.println(pr);
+//        }
+//        System.out.println("--------------------------------------");
 
 
 
@@ -77,12 +77,12 @@ public class Start {
 
 
 
-        for (Vizits vz : Vizits.getVizitsArray()) {
-            System.out.println(vz);
-        }
+//        for (Vizits vz : Vizits.getVizitsArray()) {
+//            System.out.println(vz);
+//        }
 
-//        MainMenu mainMenu = new MainMenu();
-        new ListModelTest();
+        Menu_1 visitsMenu = new Menu_1();
+//        new ListModelTest();
         System.out.println("Window started");
 
         Fileworks.writeVizitsToFile("./src/data/links/files/vizits.txt");

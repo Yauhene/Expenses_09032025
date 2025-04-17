@@ -30,7 +30,7 @@ public class Vizits {
 
         this.id = id;
         this.date = new Date();
-        System.out.println(date.toString());
+//        System.out.println(date.toString());
         this.date.setDate(dDate);
         this.date.setMonth(mDate);
         this.date.setYear(yDate);

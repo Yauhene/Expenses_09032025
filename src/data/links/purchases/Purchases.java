@@ -18,6 +18,7 @@ public class Purchases {
 
     public static ArrayList<Purchases> purchasesArray = new ArrayList<>();
     public static HashMap<Long, Purchases> purchasesMap = new HashMap<>();
+    public static HashMap<Long, Long> mapVizitPurchase = new HashMap<>();
 
     public Purchases(long vizitID, long productID, double quantity, double price, String currency) {
         this.id = ++currentID;
@@ -29,6 +30,13 @@ public class Purchases {
         this.summa = quantity * price;
         purchasesArray.add(this);
         purchasesMap.put(this.id, this);
+        mapVizitPurchase.put(vizitID, id);
+        System.out.println("!!!!!!");
+        System.out.println("mapVizitPurchase.entrySet() (из конструктора объекта):");
+        for(Map.Entry<Long, Long> itm: Purchases.mapVizitPurchase.entrySet()) {
+            System.out.println(itm);
+            System.out.println(itm.getKey() + " --> "); // + itm.getValue());
+        }
     }
 
     public Purchases(long id, long vizitID, long productID, double quantity, double price, String currency) {
