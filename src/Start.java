@@ -7,6 +7,9 @@ import data.links.purchases.*;
 import fileWorks.*;
 
 import java.io.*;
+import java.util.*;
+
+import static data.links.purchases.Purchases.*;
 //import vizits.*;
 
 
@@ -70,20 +73,29 @@ public class Start {
 
 
 
-        System.out.println("********************************************");
-        for (Purchases purch: Purchases.getPurchasesArray()) {
+        System.out.println("Распечатка  PurchasesArray из Start********************************************");
+        for (Purchases purch: getPurchasesArray()) {
             System.out.println(purch.toString());
         }
 
-
-
-//        for (Vizits vz : Vizits.getVizitsArray()) {
-//            System.out.println(vz);
+//        if (!Purchases.purchasesMap.isEmpty()) {
+//            for (Map.Entry<Long, Purchases> itm : Purchases.purchasesMap.entrySet()) {
+//                System.out.println(itm);
+//                System.out.println(itm.getKey() + " --> " + itm.getValue());
+//            }
 //        }
+//        else {
+//            System.out.println("Данные в mapVizitPurchase отсутствуют");
+//        }
+        System.out.println("---------- распечатка mapVizitPurchase из Start");
+        Purchases.showMapVisitsPurchases();
+
+        int mapSize = mapPurchaseVizit.size();
+
 
         Menu_1 visitsMenu = new Menu_1();
 //        new ListModelTest();
-        System.out.println("Window started");
+//        System.out.println("Window started");
 
         Fileworks.writeVizitsToFile("./src/data/links/files/vizits.txt");
         Fileworks.writePurchasesToFile("./src/data/links/files/purchases.txt");

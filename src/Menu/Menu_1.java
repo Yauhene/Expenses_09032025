@@ -41,16 +41,14 @@ public class Menu_1 extends JFrame
 		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		list.setPrototypeCellValue("Визит (id 8): day: 7/4/2025,  Место (id 1): Корона, Маяковского-Денисовская                  ");
 		// Создание текстового поля
-		content = new JTextArea(5, 40);
-		System.out.println("mapVizitPurchase.entrySet():");
-		for(Map.Entry<Long, Long> itm: Purchases.mapVizitPurchase.entrySet()) {
-			System.out.println(itm.getKey() + " --> " + itm.getValue());
-		}
+		content = new JTextArea(30, 50);
+
 		// Подключения слушателя
 		list.addListSelectionListener(new listSelectionListener());
 		// Подключение слушателя мыши
 		list.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
+				System.out.println("----------------------------  работа в addMouseListener ---------------");
 				if ( e.getClickCount() == 2 ) {
 					// Получение элемента
 					int selected = list.locationToIndex(e.getPoint());
@@ -63,7 +61,7 @@ public class Menu_1 extends JFrame
 				}
 			}
 		});
-		showArrayDataList();
+//		showArrayDataList();
 
 		// Размещение компонентов в интерфейсе
 		contents.add(new JLabel("Список разделов"));
@@ -72,7 +70,7 @@ public class Menu_1 extends JFrame
 		contents.add(new JScrollPane(content));
 		// Вывод окна
 		setContentPane(contents);
-		setSize(1400, 200);
+		setSize(1400, 600);
 		setVisible(true);
 	}
 	/*
@@ -94,15 +92,22 @@ public class Menu_1 extends JFrame
 	}
 
 	public String makeContent(Integer id) {
+		System.out.println("-------- работа в makeContent  ---------------");
 		long vizitID = mapDataList.get(id); // находим id визита в мапе
 		System.out.println("vizitID: " + vizitID);
-		for(Map.Entry<Long, Long> itm: Purchases.mapVizitPurchase.entrySet()) {
+		System.out.println("Size:" + Purchases.mapPurchaseVizit.entrySet().size());
+		System.out.println("   ============== из makeContent ===============");
+		for(Map.Entry<Long, Long> itm: Purchases.mapPurchaseVizit.entrySet()) {
 			System.out.println(itm.getKey() + " --> " + itm.getValue());
 		}
-		long purchaseID = Purchases.mapVizitPurchase.get(vizitID);
+		long purchaseID = Purchases.mapPurchaseVizit.get(vizitID);
 		System.out.println("purchaseID " + purchaseID);
 		System.out.println("... вошли в makeContent");
 		String str = ""; // строка-накопитель для значений покупок
+		System.out.println("mapVizitPurchase.entrySet():");
+//		for(Map.Entry<Long, Long> itm: Purchases.mapVizitPurchase.entrySet()) {
+//			System.out.println(itm.getKey().toString() + " --> " + itm.getValue().toString());
+//		}
 		for(Purchases purch: Purchases.getPurchasesArray()) {
 			if (purch.vizitID == vizitID) {
 				str = str + purch.toString() + "\n";

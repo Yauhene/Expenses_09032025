@@ -18,7 +18,7 @@ public class Purchases {
 
     public static ArrayList<Purchases> purchasesArray = new ArrayList<>();
     public static HashMap<Long, Purchases> purchasesMap = new HashMap<>();
-    public static HashMap<Long, Long> mapVizitPurchase = new HashMap<>();
+    public static HashMap<Long, Long> mapPurchaseVizit = new HashMap<>();
 
     public Purchases(long vizitID, long productID, double quantity, double price, String currency) {
         this.id = ++currentID;
@@ -30,13 +30,9 @@ public class Purchases {
         this.summa = quantity * price;
         purchasesArray.add(this);
         purchasesMap.put(this.id, this);
-        mapVizitPurchase.put(vizitID, id);
-        System.out.println("!!!!!!");
-        System.out.println("mapVizitPurchase.entrySet() (из конструктора объекта):");
-        for(Map.Entry<Long, Long> itm: Purchases.mapVizitPurchase.entrySet()) {
-            System.out.println(itm);
-            System.out.println(itm.getKey() + " --> "); // + itm.getValue());
-        }
+        mapPurchaseVizit.put(this.id,this.vizitID);
+
+
     }
 
     public Purchases(long id, long vizitID, long productID, double quantity, double price, String currency) {
@@ -49,6 +45,7 @@ public class Purchases {
         this.summa = quantity * price;
         purchasesArray.add(this);
         purchasesMap.put(this.id, this);
+        mapPurchaseVizit.put(this.id,this.vizitID);
     }
 
     public static ArrayList<Purchases> getPurchasesArray() {
@@ -68,11 +65,24 @@ public class Purchases {
 
     @Override
     public String toString() {
-        return "Покупка (id " + id + "):                                 " + "\n"
-                + "   " +  Vizits.getVizit(vizitID).toString() + ", " + "\n"
-                + "   " + "id " + Products.getProduct(productID).id + ": " +  Products.getProduct(productID).name + " - "
-                + "   " +  quantity + " " + Products.getProduct(productID).units + ", "
-                + "   " +  "цена: " + price + " " + currency + ", "
+        return "Покупка (id " + id + "):                                 "
+                + " vizitID:" + vizitID
+                + "   " + " productID: " + productID
+                + "   quantity: " +  quantity
+                + "   " +  "цена: " + price + " currency: " + currency + ", "
                 + "   " +  "стоимость: " + summa + " " + currency + "; ";
+    }
+
+    public static void showMapVisitsPurchases() {
+        System.out.println(" Распечатка mapVizitPurchase.entrySet() (из Purchases):");
+//        System.out.println("mapVizitPurchase.entrySet().isEmpty() = " + mapVizitPurchase.entrySet().isEmpty());
+        if (!mapPurchaseVizit.entrySet().isEmpty()) {
+            for (Map.Entry<Long, Long> itm : Purchases.mapPurchaseVizit.entrySet()) {
+                System.out.println(itm.getKey() + " --> " + itm.getValue());
+            }
+        }
+        else {
+            System.out.println("Данные в mapVizitPurchase отсутствуют");
+        }
     }
 }

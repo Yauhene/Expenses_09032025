@@ -34,6 +34,7 @@ public class ListSelectionListenerTest extends JFrame
 		// Подключение слушателя мыши
 		list.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
+				System.out.println("----------------------------  работа в addMouseListener ---------------");
 				if ( e.getClickCount() == 2 ) {
 					// Получение элемента
 					int selected = list.locationToIndex(e.getPoint());

@@ -71,8 +71,9 @@ public class Vizits {
 
     @Override
     public String toString() {
+//        System.out.println("____ из Vizits toString ----------");
         return "Визит (id " + id + "): "
-                + "day: " + date.getDate() + "/" + date.getMonth() + "/" + date.getYear() + ", "
-                + " " +  Places.getPlace(placeID);
+                + "day: " + date.getDate() + "/" + date.getMonth() + "/" + date.getYear() + ", ";
+//                + " "  +  Places.getPlace(placeID);
     }
 }

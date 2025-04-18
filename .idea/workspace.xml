@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="MainMenu added">
-      <change afterPath="$PROJECT_DIR$/src/Menu/Menu_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proubs/DatabaseListModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proubs/ListSelectionListenerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proubs/ListSelectionTest.java" afterDir="false" />
+    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="Проблема со слушателем мыши">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Menu_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Proubs/ListSelectionListenerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proubs/ListSelectionListenerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/links/vizits/Vizits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/vizits/Vizits.java" afterDir="false" />
@@ -38,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Java II/3_Часть третья/Expenses_09032025/src/Proubs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java II/3_Часть третья/Expenses_09032025/src/Proubs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java II\3_Часть третья\Expenses_09032025\src\Proubs" />
@@ -117,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Menu_1" />
         <item itemvalue="Application.ListSelectionListenerTest" />
+        <item itemvalue="Application.Menu_1" />
         <item itemvalue="Application.ListSelectionTest" />
         <item itemvalue="Application.ListModelTest" />
       </list>
@@ -213,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744776265813</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Проблема со слушателем мыши">
+      <option name="closed" value="true" />
+      <created>1744875540922</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744875540922</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,6 +230,7 @@
     <MESSAGE value="problem with vizits recording" />
     <MESSAGE value="problem with vizits recording resolved" />
     <MESSAGE value="MainMenu added" />
-    <option name="LAST_COMMIT_MESSAGE" value="MainMenu added" />
+    <MESSAGE value="Проблема со слушателем мыши" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проблема со слушателем мыши" />
   </component>
 </project>
