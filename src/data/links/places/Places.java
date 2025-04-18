@@ -20,14 +20,6 @@ public class Places {
         placesMap.put(this.id, this);
     }
 
-    public static long getCurrentID() {
-        return currentID;
-    }
-
-    public static void setCurrentID(long currentID) {
-        Places.currentID = currentID;
-    }
-
     public Places(long id, String name, String location) {
         this.id = id;
         this.name = name;
@@ -40,7 +32,13 @@ public class Places {
         return placesArray;
     }
 
+    public static long getCurrentID() {
+        return currentID;
+    }
 
+    public static void setCurrentID(long currentID) {
+        Places.currentID = currentID;
+    }
 
     public static Places getPlace(long id) {
         return placesMap.get(id);

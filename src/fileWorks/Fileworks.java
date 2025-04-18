@@ -56,6 +56,7 @@ public class Fileworks {
                         Integer.parseInt(tempStr[2]),
                         Integer.parseInt(tempStr[3]),
                         Long.parseLong(tempStr[4]));
+                        Vizits.setCurrentID(Vizits.getCurrentID()+1);
 
                 if (vizit.id > Vizits.getCurrentID()) {
                     Vizits.setCurrentID(vizit.id);
@@ -226,9 +227,9 @@ public class Fileworks {
                         tempStr[1],
                         tempStr[2]);
 
-                if (place.id > Products.getCurrentID()) {
-                    Products.setCurrentID(place.id);
-                }
+                    Places.setCurrentID(place.id);
+                System.out.println("Places.getCurrentID() после считыввания places.txt:" + Places.getCurrentID());
+
             }
         } catch (IOException e) {
             e.printStackTrace();

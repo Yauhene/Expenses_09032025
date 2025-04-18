@@ -18,7 +18,7 @@ public class Menu_1 extends JFrame
 	ArrayList<Vizits> arrVizits = Vizits.getVizitsArray(); // делаем копию Vizits.vizitsArrayList
 	private final String[]   dataList = new String[arrVizits.size()]; // массив данных для отображения
 	// Мапа индекс в dataList --> id визита
-	HashMap<Integer, Long> mapDataList = new HashMap<>();
+	HashMap<Integer, Long> mapDataList = new HashMap<>(); // мапа индекс строки в JList / id визита
 
 
 	private final String[][] dataText = {{"Сахар", "Мука", "Соль"},
@@ -98,19 +98,20 @@ public class Menu_1 extends JFrame
 		System.out.println("Size:" + Purchases.mapPurchaseVizit.entrySet().size());
 		System.out.println("   ============== из makeContent ===============");
 		for(Map.Entry<Long, Long> itm: Purchases.mapPurchaseVizit.entrySet()) {
-			System.out.println(itm.getKey() + " --> " + itm.getValue());
+			System.out.println("Key " + itm.getKey() + " --> Value " + itm.getValue());
 		}
-		long purchaseID = Purchases.mapPurchaseVizit.get(vizitID);
-		System.out.println("purchaseID " + purchaseID);
+//		long purchaseID = Purchases.purchasesMap.get(vizitID).id;
+//		System.out.println("purchaseID " + purchaseID);
 		System.out.println("... вошли в makeContent");
 		String str = ""; // строка-накопитель для значений покупок
-		System.out.println("mapVizitPurchase.entrySet():");
+//		System.out.println("mapVizitPurchase.entrySet():");
 //		for(Map.Entry<Long, Long> itm: Purchases.mapVizitPurchase.entrySet()) {
 //			System.out.println(itm.getKey().toString() + " --> " + itm.getValue().toString());
 //		}
-		for(Purchases purch: Purchases.getPurchasesArray()) {
-			if (purch.vizitID == vizitID) {
-				str = str + purch.toString() + "\n";
+		for(Map.Entry purch: Purchases.mapPurchaseVizit.entrySet()) {
+			System.out.println("purch.getValue() = " + purch.getValue() + "; " + "vizitID = " + vizitID);
+			if (purch.getValue().equals(vizitID)) {
+				str = str + Purchases.purchasesMap.get(purch.getKey()).toString() + "\n";
 			}
 		}
 		return str;

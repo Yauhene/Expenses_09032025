@@ -25,7 +25,8 @@ public class Start {
         Fileworks.readProductsFromFile("./src/data/links/files/products.txt");
         Fileworks.readPlacesFromFile("./src/data/links/files/places.txt");
 
-//        place = new Places("Корона", "Маяковского-Денисовская");
+//        place = new Places("Зеленая грядка", "возле \"Евроопта\"");
+
 //        place = new Places("Гиппо", "Рокоссовского");
 //        place = new Places("MOMO", "Партизанский пр-т");
 
@@ -43,8 +44,10 @@ public class Start {
 //        product = new Products(1,  "Перец горошек, пачка 20 г", "шт.");
 //        product = new Products(1,  "Колбаса Еврейская", "г");
 //        product = new Products(1,  "Колбаса С сальцем", "кг");
+//        product = new Products(1, "Лук репчатый", "кг");
 
-//        vizit = new Vizits(7, 4, 2025, 1);
+//        vizit = new Vizits(7, 4, 2025, 4);
+//        vizit = new Vizits(18, 4, 2025, 4);
 //        System.out.println(vizit.id + " " + vizit.date);
 
 //        purchase = new Purchases(1,1,2,0.49, "руб.");
@@ -57,7 +60,7 @@ public class Start {
 //        purchase = new Purchases(1,8,1,3.47, "руб.");
 //        purchase = new Purchases(1,9,0.138 ,36.97, "руб.");
 //        purchase = new Purchases(1,10,0.282,11.65, "руб.");
-
+//        purchase = new Purchases(4,11,0.7,1.75, "руб.");
 
 
 //        Fileworks.writePurchasesToFile("./src/data/links/files/purchases.txt");

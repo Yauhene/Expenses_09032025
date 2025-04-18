@@ -36,7 +36,7 @@ public class Purchases {
     }
 
     public Purchases(long id, long vizitID, long productID, double quantity, double price, String currency) {
-        this.id = id;
+        this.id = ++currentID;
         this.vizitID = vizitID;
         this.productID = productID;
         this.quantity = quantity;
