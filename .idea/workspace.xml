@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="Purchases - OK">
+    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="JText contens edited">
+      <change afterPath="$PROJECT_DIR$/src/Proubs/MyPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proubs/MyWin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/Menu_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Proubs/ListSelectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proubs/ListSelectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +51,7 @@
       <recent name="Menu" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Start">
-    <configuration name="ListModelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Proubs.ListModelTest" />
-      <module name="Expenses_09032025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Proubs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MyWin">
     <configuration name="ListSelectionListenerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Proubs.ListSelectionListenerTest" />
       <module name="Expenses_09032025" />
@@ -102,6 +91,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Proubs.MyPanel" />
+      <module name="Expenses_09032025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Proubs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Proubs.MyWin" />
+      <module name="Expenses_09032025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Proubs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Start" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Start" />
       <module name="Expenses_09032025" />
@@ -111,10 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyWin" />
+        <item itemvalue="Application.MyPanel" />
         <item itemvalue="Application.ListSelectionListenerTest" />
         <item itemvalue="Application.Menu_1" />
         <item itemvalue="Application.ListSelectionTest" />
-        <item itemvalue="Application.ListModelTest" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744986592465</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="JText contens edited">
+      <option name="closed" value="true" />
+      <created>1745045247231</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745045247231</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,6 +278,7 @@
     <MESSAGE value="small victory, trouble was made in mapPurchaseVizit" />
     <MESSAGE value="small victory, trouble was made in map mapPurchaseVizit" />
     <MESSAGE value="Purchases - OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Purchases - OK" />
+    <MESSAGE value="JText contens edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="JText contens edited" />
   </component>
 </project>
