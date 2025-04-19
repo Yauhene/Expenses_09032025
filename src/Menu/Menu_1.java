@@ -2,6 +2,7 @@ package Menu;
 
 // Пример тестирования слушателя ListSelectionListener
 
+import data.links.places.*;
 import data.links.products.*;
 import data.links.purchases.*;
 import data.links.vizits.*;
@@ -32,7 +33,7 @@ public class Menu_1 extends JFrame
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		// Набиваем данными dataList
 		for(int i = 0; i < arrVizits.size(); i++) {
-			dataList[i] = arrVizits.get(i).id + ". " + arrVizits.get(i).toString();
+			dataList[i] = arrVizits.get(i).id + ". " + arrVizits.get(i).date.getDay() + "/"+ arrVizits.get(i).date.getMonth()+ "/"+ arrVizits.get(i).date.getYear() + ", " + Places.placesMap.get(arrVizits.get(i).placeID).name + ", " + Places.placesMap.get(arrVizits.get(i).placeID).location;
 			mapDataList.put(i, arrVizits.get(i).id);
 		}
 		// Создание списка

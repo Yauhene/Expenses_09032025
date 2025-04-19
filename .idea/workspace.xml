@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="small victory, trouble was made in map mapPurchaseVizit">
+    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="Purchases - OK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu/Menu_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/files/places.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/files/places.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/files/products.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/files/products.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/files/purchases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/files/purchases.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/files/vizits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/files/vizits.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/places/Places.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/places/Places.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileWorks/Fileworks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileWorks/Fileworks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744960805908</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Purchases - OK">
+      <option name="closed" value="true" />
+      <created>1744986592465</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1744986592465</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -253,6 +253,7 @@
     <MESSAGE value="Проблема со слушателем мыши" />
     <MESSAGE value="small victory, trouble was made in mapPurchaseVizit" />
     <MESSAGE value="small victory, trouble was made in map mapPurchaseVizit" />
-    <option name="LAST_COMMIT_MESSAGE" value="small victory, trouble was made in map mapPurchaseVizit" />
+    <MESSAGE value="Purchases - OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Purchases - OK" />
   </component>
 </project>
