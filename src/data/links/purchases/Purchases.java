@@ -63,6 +63,30 @@ public class Purchases {
         Purchases.currentID = currentID;
     }
 
+    public String toJText() {
+        String str = "";
+        str = String.format("%5d., (viz id: %5d) (prod id: %5d): %-50s %7.2f %s цена: %5.2f %s ст-ть: %5.2f %s",id, vizitID, productID,
+                Products.productsMap.get(productID).name,
+                quantity, Products.productsMap.get(productID).units,
+                price, currency, summa, currency);
+//        str = String.format("%s4, (viz id: %s4) ",id, vizitID );
+//                + "," + "(prod id:" + productID + ") "
+//                + Products.productsMap.get(productID).name
+//                + ": " +  quantity + Products.productsMap.get(productID).units
+//                + "   " +  ", цена: " + price + " " + currency + ", "
+//                + "   " +  "ст-ть: " + summa, id, vizitID,  productID, Products.productsMap.get(productID).name
+//        quantity, Products.productsMap.get(productID).units, price, currency, summa);
+
+//         str = id + ". "
+//                + "(viz id: " + vizitID + ") "
+//                + "," + "(prod id:" + productID + ") "
+//                + Products.productsMap.get(productID).name
+//                + ": " +  quantity + Products.productsMap.get(productID).units
+//                + "   " +  ", цена: " + price + " " + currency + ", "
+//                + "   " +  "ст-ть: " + summa ;
+        return str;
+    }
+
     @Override
     public String toString() {
         return "Покупка (id " + id + "):                                 "

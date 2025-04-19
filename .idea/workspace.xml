@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="JText contens edited">
-      <change afterPath="$PROJECT_DIR$/src/Proubs/MyPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proubs/MyWin.java" afterDir="false" />
+    <list default="true" id="0752a946-e6d6-4ff8-b340-598982f27393" name="Changes" comment="added new classes in Probes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proubs/ListSelectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proubs/ListSelectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/Menu_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/Menu_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/links/purchases/Purchases.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <recent name="Menu" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyWin">
+  <component name="RunManager" selected="Application.Start">
     <configuration name="ListSelectionListenerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Proubs.ListSelectionListenerTest" />
       <module name="Expenses_09032025" />
@@ -263,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745045247231</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added new classes in Probes">
+      <option name="closed" value="true" />
+      <created>1745067712605</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745067712605</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -279,6 +286,7 @@
     <MESSAGE value="small victory, trouble was made in map mapPurchaseVizit" />
     <MESSAGE value="Purchases - OK" />
     <MESSAGE value="JText contens edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="JText contens edited" />
+    <MESSAGE value="added new classes in Probes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new classes in Probes" />
   </component>
 </project>

@@ -112,7 +112,7 @@ public class Menu_1 extends JFrame
 		for(Map.Entry purch: Purchases.mapPurchaseVizit.entrySet()) {
 			System.out.println("purch.getValue() = " + purch.getValue() + "; " + "vizitID = " + vizitID);
 			if (purch.getValue().equals(vizitID)) {
-				str = str + Purchases.purchasesMap.get(purch.getKey()).toString() + "\n";
+				str = str + Purchases.purchasesMap.get(purch.getKey()).toJText() + "\n";
 			}
 		}
 		return str;
